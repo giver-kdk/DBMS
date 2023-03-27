@@ -1,4 +1,4 @@
--- Basic SQL code for defining and modifying DB
+-- Basic SQL code for defining and modifying DB. Run the command in XAMP console one by one.
 -- Using mySQL as root
 mysql -u root -p
 show databases;
