@@ -8,6 +8,8 @@ show databases;
 USE csit77_giver;
 show databases;
 -- creates table/entity with given attributes definition
+-- VARCHAR(20) means string of max length 20
+-- NUMERIC(10, 2) means number of max digits 10, where there are 2 digits after decimal point. Eg: 12345678.99
 CREATE TABLE department(dept_name VARCHAR(20), building VARCHAR(20), budget NUMERIC(10, 2), PRIMARY KEY(dept_name));
 -- Describes TABLE definition
 DESC department;
