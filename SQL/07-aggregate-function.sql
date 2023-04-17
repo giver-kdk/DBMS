@@ -20,3 +20,9 @@ select * from instructor
 select count(*) from instructor where dept_name="Physics"
 -- Show total salary of intructors from "IT" department
 select sum(salary) from instructor where dept_name="IT"
+
+
+-- Finding the number of students from each department.
+-- "group by" groups rows with same values
+-- Here, since grouping is done by "dept_naem", so " dept_name" should be after "select" too 
+select count(*), dept_name from student group by dept_name
