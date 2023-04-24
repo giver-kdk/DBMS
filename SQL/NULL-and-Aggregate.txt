@@ -1,0 +1,12 @@
+NULL and Aggregate
+- All aggregate operations except count(*) ignore tuples with null values on the aggregate attribute.
+- So, coutn(*) counts tuples whether there is NULL or not.
+- Total all salaries: 
+  - select sum(salary) from instructor;
+- Above statement igonores null amounts
+- Result is null if there is no non-null amount
+
+
+- What if collection has only null values?, then: 
+  - count returns 0
+  - All other aggragate functions return NULL
