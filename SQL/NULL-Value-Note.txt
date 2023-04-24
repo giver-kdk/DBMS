@@ -1,0 +1,13 @@
+NULL Value:
+- NULL is the term used to represent a missing in SQL.
+- A NULL value in a table is a value in a field that appears to be blank.
+- To test NULL values, use: 
+  - IS NULL 
+  - IS NOT NULL
+ - Syntax: 
+  - select column(s) fom tbname where column is null;
+  
+- Eg:
+  List all customers with a NULL value in the address field 
+  - select * from instructor where address is null;
+  
