@@ -1,7 +1,8 @@
 Aggregate function - The HAVING clause
 - Used to state a condition that applies to group rather than tuples
+- Always used after "GROUP BY" clause
 - Syntax: 
     select column_name(s) from tbname
     where condition group by column_name(s) having condition;
    - Eg: Find the names and average salaries of all department whose average salary is greater than Rs. 30000.
-      select dept_name, avrg(salary) from instructor having avrg(salary) > 30000;
+      select dept_name, avg(salary) from instructor group by dept_name having avg(salary) > 30000;
