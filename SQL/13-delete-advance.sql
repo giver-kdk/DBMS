@@ -1,1 +1,0 @@
-delete from instructor where dept_name in (select dept_name from department where building="Block B");
