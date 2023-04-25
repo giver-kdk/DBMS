@@ -1,0 +1,1 @@
+ALTER TABLE Persons DROP CONSTRAINT UC_Person;
