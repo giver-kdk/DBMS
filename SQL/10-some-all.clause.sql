@@ -1,3 +1,6 @@
+select name from instructor where salary = some(select salary from instructor where address="Lalitpur");
+
+
 select salary from instructor where salary < all(select salary from instructor where address="Kathmandu");
 
 -- Gives department name with higest average salry
