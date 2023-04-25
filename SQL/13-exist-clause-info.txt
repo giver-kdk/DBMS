@@ -1,0 +1,7 @@
+EXIST: 
+
+Synatx: 
+    select column(s) from tbname where exists (select column(s) from tbname where tnmae1.column = tbname2.column);
+
+Eg: Find name of customer who has both loan as well as account in bank
+- select cust_name from 
