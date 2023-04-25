@@ -50,4 +50,5 @@ insert into department VALUES("Robotics", "Block A", 450000)
 select * FROM department WHERE exists(select dept_name from instructor)
 SELECT * FROM `instructor`
 select * from department where exists(select dept_name from instructor where department.dept_name=instructor.dept_name)
+-- Select department naem which includes one or more instructor
 select * from department where exists(select * from instructor where department.dept_name=instructor.dept_name)
