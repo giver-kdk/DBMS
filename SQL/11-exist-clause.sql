@@ -52,3 +52,6 @@ SELECT * FROM `instructor`
 select * from department where exists(select dept_name from instructor where department.dept_name=instructor.dept_name)
 -- Select department naem which includes one or more instructor
 select * from department where exists(select * from instructor where department.dept_name=instructor.dept_name)
+
+-- Select department naem which doesn't include one or more instructor
+select * from department where not exists(select * from instructor where department.dept_name=instructor.dept_name)
