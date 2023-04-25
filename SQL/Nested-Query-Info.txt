@@ -1,0 +1,15 @@
+Nested Subqueries: 
+- SQL provides a mechanism for the nesting of subqueries
+- A query within another SQL query is called a subquery or inner query or nested query
+- It can be used with SELECT, INSERT, UPDATE and DELETE statements
+- It must be enclosed in parenthesis
+
+- A common use of subqueries is to perform test for membership, make set comparison and determine set cardinality by nesting subqueries in WHERE clause
+
+Set Membership: 
+SQL allows testing tuples for membership in a relation
+- The IN connective tests for set membership(i.e; includes in set) whereas,
+NOT IN connective tests for absence of set membership
+- Syntax: 
+  select column(s) from tbnaem where column oprator (select column(s) form tbname where condition)
+  // Here, operator can be IN or NOT IN
