@@ -1,0 +1,5 @@
+SOME clause: 
+- means "atleast one"
+- Eg: select name from instructor where salary > some();
+
+- select name from instructor where salary > some(select salary from instructor where adrress ="Lalitpur");
