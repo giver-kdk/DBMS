@@ -3,3 +3,4 @@ delete from instructor where dept_name in (select dept_name from department wher
 -- We utilize already existing data
 insert into student select ID, name, dept_name, 0 from instructor;
 
+update instructor set salary=1.05*salary where salary < (select avg(salary) from instructor);
