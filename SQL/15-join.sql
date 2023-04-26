@@ -8,8 +8,13 @@ select name, building from instructor natural join department;
 -- INNER Join is same as JOIN
 select name, building from instructor inner join department on instructor.dept_name = department.dept_name;
 
--- 
-select * from instructor left outer join department on instructor.dept_name = department.dept_name
+-- Left Outer Join
+select * from instructor left outer join department on instructor.dept_name = department.dept_name;
 
--- 
-select * from instructor right outer join department on instructor.dept_name = department.dept_name
+-- Right Outer Join
+select * from instructor right outer join department on instructor.dept_name = department.dept_name;
+
+-- Full Outer Join not supported in mySQL. So, do union to simulate that
+select * from instructor left outer join department on instructor.dept_name = department.dept_name
+UNION
+select * from instructor right outer join department on instructor.dept_name = department.dept_name;
