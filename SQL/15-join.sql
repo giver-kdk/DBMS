@@ -1,0 +1,1 @@
+select name, building from instructor natural join department;
