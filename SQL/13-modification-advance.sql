@@ -3,4 +3,5 @@ delete from instructor where dept_name in (select dept_name from department wher
 -- We utilize already existing data
 insert into student select ID, name, dept_name, 0 from instructor;
 -- Increase salary of instructor by 5% if salary is less than average salary 
+-- Only works in latest version 
 update instructor set salary=1.05*salary where salary < (select avg(salary) from instructor);

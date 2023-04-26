@@ -1,5 +1,5 @@
--- Creates a faculty view with data id, name and dept_name
-create view faculty as select id, name, dept_name from instructor;
+-- Creates a faculty view with data ID, name and dept_name
+create view faculty as select ID, name, dept_name from instructor;
 -- Actually retrieve the viewable data
 select * from faculty;
 -- Create view with custom calculated attribute from already existing attribute
