@@ -4,6 +4,7 @@ create view faculty as select ID, name, dept_name from instructor;
 -- Actually retrieve the viewable data
 select * from faculty;
 -- Create view with custom calculated attribute from already existing attribute
+-- Here, "dept_name" and "total_salary" attribute is created using "dept_name" and "sum(salary)"
 create view dept_total_salary(dept_name, total_salary) as select dept_name, sum(salary) from instructor group by dept_name; 
 
 select * from dept_total_salary;
