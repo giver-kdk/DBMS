@@ -49,7 +49,7 @@ select * from instructor
 select distinct T.name from instructor as T, instructor as S where T.salary > S.salary
 select * from instructor
 insert into instructor values(4567, "Raju Kumar", 50000, "Physics"), (5678, "Dipson Malla", 20000, "Music")
-select * from instructor\
+select * from instructor
 -- Retrieve data in order using "ORDER BY". 
 -- Here, during ordering by "salary", if equal salary encountered then only those equal data is ordered using "ID"
 -- "desc" means descending and "asc" means ascending. 
