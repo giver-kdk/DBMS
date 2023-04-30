@@ -5,3 +5,6 @@ select ID, name from student union select ID, name from instructor;
 select ID, name from student intersect select ID, name from instructor;
 -- Only select non-common data from student and instructor
 select ID, name from student except select ID, name from instructor;
+-- Only, selects data present in student but not in instructor
+-- Not supported in MySQL
+select ID, name from student minus select ID, name from instructor;
