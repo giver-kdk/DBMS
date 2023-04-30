@@ -6,6 +6,7 @@ select name, building from instructor natural join department;
 
 -- Joins all the rows of two tables when condition is satisfied
 -- INNER Join is same as JOIN
+-- In JOIN, condition is written after "ON" rather than "WHERE"
 select name, building from instructor inner join department on instructor.dept_name = department.dept_name;
 
 -- Left Outer Join
